@@ -1,0 +1,76 @@
+/* General Reset */
+body, h2, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container styling */
+#Main {
+    width: 300px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Output display styling */
+#output {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+}
+
+#Answer {
+    font-size: 2em;
+    min-height: 40px;
+}
+
+/* Numpad styling */
+#Numpad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+/* Button styling */
+button {
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:nth-child(4n) { /* Operator buttons */
+    background-color: #f9a825;
+    color: #fff;
+}
+
+button:nth-child(4n):hover {
+    background-color: #f57f17;
+}
